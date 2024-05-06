@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Lab_4</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="root">
+			<div class="container-users">
+				<div class="users-inner">
+					<button type="button" class="btn">Fetch users</button>
+					<input class="input" type="number" name="quantity" id="quantity" min="0" value="5">
+				</div>
+				<ul class="user-list"></ul>
+			</div>
+			<div class="container-modalWindow">
+				<div class="modalWindow-inner">
+					<button class="modalWindow-btn" onclick="showAll()">Усе</button>
+					<button class="modalWindow-btn"  onclick="showTrue()">Правда</button>
+					<button class="modalWindow-btn"  onclick="showFalse()">Не правда</button>
+
+					<form id="myForm">
+						<label for="title">Заголовок:</label>
+						<input class="input" type="text" id="title" name="title"><br><br>
+						<label><input type="radio" name="completed" value="true"> Правда</label>
+						<label><input type="radio" name="completed" value="false"> Не правда</label><br><br>
+						<button class="form-btn" type="submit">Відправити</button>
+					</form>
+
+					<ul id="settlementList"></ul>
+				</div>
+			</div>
+
+		</div>
+	<script src="js/main.js"></script>
+	</body>
+</html>
+
+
